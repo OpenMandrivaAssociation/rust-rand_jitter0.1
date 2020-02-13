@@ -1,0 +1,15 @@
+--- rand_jitter-0.1.4/Cargo.toml	1970-01-01T00:00:00+00:00
++++ rand_jitter-0.1.4/Cargo.toml	2019-08-04T12:13:43.432813+00:00
+@@ -29,12 +29,6 @@
+ 
+ [features]
+ std = ["rand_core/std"]
+-[target."cfg(any(target_os = \"macos\", target_os = \"ios\"))".dependencies.libc]
+-version = "0.2"
+-default_features = false
+-[target."cfg(target_os = \"windows\")".dependencies.winapi]
+-version = "0.3"
+-features = ["profileapi"]
+ [badges.appveyor]
+ repository = "rust-random/rand"
+ 
